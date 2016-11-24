@@ -1,0 +1,120 @@
+{% extends 'layout/base.twig' %}
+
+{% block title%}Home | Mi Cubania{% endblock %}
+
+{% block head %}
+{{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <section class="fullscreen image-bg">
+        <div class="background-image-holder">
+            <img alt="image" class="background-image" src="/img/micubania/home-slider/6.jpg" />
+        </div>
+        <div class="container v-align-transform">
+            <div class="row">
+                <div class="col-sm-8 col-md-6 mb24">
+
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                    <h3 class="uppercase mb40 mb-xs-24">Mi Cubania</h3>
+                    <p class="lead mb64">
+                        Un Espacio donde la cultura y tradicion se hacen presente en cada momento.
+                    </p>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+        <div class="background-image-holder">
+            <img alt="Background Image" class="background-image" src="/img/micubania/home-parallax/1.jpg" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2 class="uppercase mb8">APASIONA</h2>
+                    <p class="lead mb40">1° Jornada de Talleres Danzas Folklóricas Cubanas</p>
+                    {#<a class="btn btn-lg btn-white mb0" href="#">Explore Tour</a>#}
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+        <div class="background-image-holder">
+            <img alt="Background Image" class="background-image" src="/img/micubania/home-parallax/2.jpg" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2 class="uppercase mb8">SIENTE</h2>
+                    <p class="lead mb40">Danzas YORUBA, Elegúa y Yemaya</p>
+                    {#<a class="btn btn-lg btn-white mb0" href="#">Explore Tour</a>#}
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+    <section class="image-bg bg-dark parallax overlay pt160 pb160 pt-xs-40 pb-xs-40">
+        <div class="background-image-holder">
+            <img alt="Background Image" class="background-image" src="/img/micubania/home-parallax/3.jpg" />
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2 class="uppercase mb8">VIVE</h2>
+                    <p class="lead mb40">Complejo de la RUMBA</p>
+                    {#<a class="btn btn-lg btn-white mb0" href="#">Explore Tour</a>#}
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h4 class="uppercase mb16">Gallería de Imaganes</h4>
+                <p class="lead mb64">
+                    Jornada de Talleres y Seminarios
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+                    <ul>
+                        {% for i in 1..20 %}
+                        <li>
+                            <a href="/img/micubania/home-lightbox/{{i}}.jpg" data-lightbox="true" data-title="image">
+                                <div class="background-image-holder">
+                                    <img alt="image" class="background-image" src="/img/micubania/home-lightbox/{{i}}.jpg">
+                                </div>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
